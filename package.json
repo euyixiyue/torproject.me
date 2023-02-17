@@ -39,6 +39,12 @@
 		"markdown-it-anchor": "^8.6.6"
 	},
 	"dependencies": {
-		"csso": "^5.0.5"
+		"@ampproject/toolbox-optimizer": "^2.6.0",
+		"csso": "^5.0.5",
+		"html-minifier": "^4.0.0",
+		"jimp": "^0.22.4",
+		"lru-cache": "^7.16.1",
+		"postcss": "^8.4.21",
+		"terser": "^5.16.4"
 	}
 }
