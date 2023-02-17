@@ -33,6 +33,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+	eleventyConfig.addPlugin(require("./_11ty/optimize-html.js"));
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

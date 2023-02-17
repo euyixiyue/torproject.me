@@ -121,8 +121,4 @@ module.exports = {
 
 function isAmp(content) {
   return /\<html amp/i.test(content);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b75d044d72d91e25f754848daa1fc7deb034660f
