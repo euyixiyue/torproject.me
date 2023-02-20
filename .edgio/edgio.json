@@ -1,0 +1,313 @@
+{
+  "version": "6.1.1",
+  "backends": {
+    "origin": {
+      "domainOrIp": "edgio.torproject.me",
+      "hostHeader": "edgio.torproject.me"
+    }
+  },
+  "destinations": {
+    "default": {
+      "index": 0,
+      "errorRoutes": [],
+      "routes": [
+        {
+          "path": "/__edgio__/cache-manifest.js",
+          "routeJson": "{\"path\":\"/__edgio__/cache-manifest.js\"}",
+          "match": [
+            {
+              "value": "${path}",
+              "matchRegex": "(?i)^/__edgio__/cache-manifest\\.js[/#\\?]?$"
+            }
+          ],
+          "matchResp": [],
+          "cache": {
+            "maxAgeSeconds": 31536000
+          },
+          "route": {
+            "action": "proxy",
+            "backend": "__js__"
+          },
+          "transform": {
+            "request": [],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": [
+              {
+                "action": "set-header",
+                "name": "cache-control",
+                "value": "private, max-age=60"
+              },
+              {
+                "action": "set-header",
+                "name": "content-type",
+                "value": "text/javascript"
+              },
+              {
+                "action": "set-header",
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/__(layer0|xdn)__/cache-manifest.js",
+          "routeJson": "{\"path\":\"/__(layer0|xdn)__/cache-manifest.js\"}",
+          "match": [
+            {
+              "value": "${path}",
+              "matchRegex": "(?i)^/__(layer0|xdn)__/cache-manifest\\.js[/#\\?]?$"
+            }
+          ],
+          "matchResp": [],
+          "route": {
+            "action": "synthetic-response",
+            "statusCode": 301
+          },
+          "transform": {
+            "request": [],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": [
+              {
+                "action": "set-header",
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "action": "set-header",
+                "name": "location",
+                "value": "${url}"
+              },
+              {
+                "action": "update-header",
+                "name": "location",
+                "valueRegex": "(?i)^/__(layer0|xdn)__/cache-manifest\\.js(\\?[^#]+)?[/#\\?]?$",
+                "replaceValue": "/__edgio__/cache-manifest.js\\2"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/__edgio__/devtools/enable",
+          "routeJson": "{\"method\":\"get\",\"path\":\"/__edgio__/devtools/enable\"}",
+          "match": [
+            {
+              "value": "${path}",
+              "matchRegex": "(?i)^/__edgio__/devtools/enable[/#\\?]?$"
+            },
+            {
+              "value": "${method}",
+              "matchRegex": "(?i)^get$"
+            }
+          ],
+          "matchResp": [],
+          "cache": {
+            "disabled": true
+          },
+          "route": {
+            "action": "synthetic-response",
+            "statusCode": 302
+          },
+          "transform": {
+            "request": [],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": [
+              {
+                "action": "add-cookie",
+                "name": "edgio_devtools_enabled",
+                "value": "true; Path=/"
+              },
+              {
+                "action": "set-header",
+                "name": "cache-control",
+                "value": "private, no-store, no-cache"
+              },
+              {
+                "action": "remove-header",
+                "name": "x-sw-cache-control"
+              },
+              {
+                "action": "set-header",
+                "name": "location",
+                "value": "${url}"
+              },
+              {
+                "action": "update-header",
+                "name": "location",
+                "valueRegex": "(?i)^/__edgio__/devtools/enable(\\?[^#]+)?[/#\\?]?$",
+                "replaceValue": "/\\1"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/__edgio__/devtools/disable",
+          "routeJson": "{\"method\":\"get\",\"path\":\"/__edgio__/devtools/disable\"}",
+          "match": [
+            {
+              "value": "${path}",
+              "matchRegex": "(?i)^/__edgio__/devtools/disable[/#\\?]?$"
+            },
+            {
+              "value": "${method}",
+              "matchRegex": "(?i)^get$"
+            }
+          ],
+          "matchResp": [],
+          "cache": {
+            "disabled": true
+          },
+          "route": {
+            "action": "synthetic-response",
+            "statusCode": 302
+          },
+          "transform": {
+            "request": [],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": [
+              {
+                "action": "add-cookie",
+                "name": "edgio_devtools_enabled",
+                "value": "false; Path=/"
+              },
+              {
+                "action": "set-header",
+                "name": "cache-control",
+                "value": "private, no-store, no-cache"
+              },
+              {
+                "action": "remove-header",
+                "name": "x-sw-cache-control"
+              },
+              {
+                "action": "set-header",
+                "name": "location",
+                "value": "${url}"
+              },
+              {
+                "action": "update-header",
+                "name": "location",
+                "valueRegex": "(?i)^/__edgio__/devtools/disable(\\?[^#]+)?[/#\\?]?$",
+                "replaceValue": "/\\1"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/__edgio__/devtools/:path*",
+          "routeJson": "{\"path\":\"/__edgio__/devtools/:path*\"}",
+          "match": [
+            {
+              "value": "${path}",
+              "matchRegex": "(?i)^/__edgio__/devtools(?:/((?:[^/#\\?]+?)(?:/(?:[^/#\\?]+?))*))?[/#\\?]?$"
+            }
+          ],
+          "matchResp": [],
+          "cache": {
+            "maxAgeSeconds": 315360000
+          },
+          "route": {
+            "action": "proxy",
+            "backend": "__static__",
+            "fsPath": [
+              "/node_modules/@edgio/devtools/widget/:path*"
+            ],
+            "fallbackToCompute": false
+          },
+          "transform": {
+            "request": [
+              {
+                "action": "update-path",
+                "valueRegex": "(?i)^/__edgio__/devtools(?:/((?:[^/#\\?]+?)(?:/(?:[^/#\\?]+?))*))?[/#\\?]?$",
+                "replaceValue": "/node_modules/@edgio/devtools/widget/\\1"
+              }
+            ],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": [
+              {
+                "action": "set-header",
+                "name": "cache-control",
+                "value": "private, no-store, no-cache"
+              },
+              {
+                "action": "remove-header",
+                "name": "x-sw-cache-control"
+              }
+            ]
+          }
+        },
+        {
+          "routeJson": "{\"headers\":{\"host\":\"/\\\\.layer0\\\\.link|\\\\.layer0-perma\\\\.link|\\\\.edgio\\\\.link|\\\\.edgio-perma\\\\.link|\\\\.layer0-limelight\\\\.link/\"}}",
+          "match": [
+            {
+              "value": "${req:host}",
+              "matchRegex": "\\.layer0\\.link|\\.layer0-perma\\.link|\\.edgio\\.link|\\.edgio-perma\\.link|\\.layer0-limelight\\.link"
+            }
+          ],
+          "matchResp": [],
+          "transform": {
+            "request": [],
+            "upstreamResponse": [],
+            "response": [
+              {
+                "action": "set-header",
+                "name": "x-robots-tag",
+                "value": "noindex"
+              }
+            ]
+          }
+        },
+        {
+          "routeJson": "{}",
+          "match": [],
+          "matchResp": [],
+          "route": {
+            "action": "proxy",
+            "backend": "origin"
+          },
+          "transform": {
+            "request": [],
+            "upstreamResponse": [
+              {
+                "action": "set-header",
+                "name": "vary",
+                "value": "accept-encoding"
+              }
+            ],
+            "response": []
+          }
+        }
+      ]
+    }
+  }
+}

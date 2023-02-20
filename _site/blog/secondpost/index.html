@@ -1,0 +1,170 @@
+<!doctype html><html domain=torproject.me lang=en prefix="og: https://ogp.me/ns#"><meta charset=utf-8><meta content="width=device-width,initial-scale=1" name=viewport><title>This is my second post with a much longer title. - Xiyue Zhang</title><meta content="This is my second post with a much longer title. - Xiyue Zhang}" name=title><meta content="This is a post on My Blog about leveraging agile frameworks." name=description><meta content=website property=og:type><meta content=https://torproject.me/ property=og:url><meta content="This is my second post with a much longer title. - Xiyue Zhang" property=og:title><meta content="This is a post on My Blog about leveraging agile frameworks." property=og:description><meta content=https://v1.screenshot.11ty.dev/https%3A%2F%2Ftorproject.me/opengraph/ property=og:image><meta content=summary_large_image property=twitter:card><meta content=https://torproject.me/ property=twitter:url><meta content="This is my second post with a much longer title. - Xiyue Zhang" property=twitter:title><meta content="This is a post on My Blog about leveraging agile frameworks." property=twitter:description><meta content=https://v1.screenshot.11ty.dev/https%3A%2F%2Ftorproject.me/opengraph/ property=twitter:image><link href=https://github.com/euyixiyue rel=me><link href=mailto:euyix@proton.me rel=me><link href=https://webmention.io/torproject.me/webmention rel=webmention><link href=https://webmention.io/torproject.me/xmlrpc rel=pingback><link href=https://torproject.me//blog/secondpost/ rel=canonical><link href=/feed/feed.xml rel=alternate title="Xiyue Zhang" type=application/atom+xml><link href=/feed/feed.json rel=alternate title="Xiyue Zhang" type=application/json><link href=https://netlify.torproject.me/blog/secondpost/ rel=alternate title="Xiyue Zhang"><meta content="Eleventy v2.0.0" name=generator><meta content=no-referrer-when-downgrade name=referrer><link href=/ rel=preconnect crossorigin><style>/* Only include the syntax highlighter CSS on blog posts */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style><style>:root{--font-family:-apple-system, system-ui, sans-serif;--font-family-monospace:Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;--color-gray-20:#e0e0e0;--color-gray-90:#1d1d1f;--background-color:#fff;--text-color:var(--color-gray-90);--text-color-link:#082840;--text-color-link-active:#5f2b48;--text-color-link-visited:#17050F;--syntax-tab-size:2}@media (prefers-color-scheme:dark){:root{--color-gray-20:#e0e0e0;--color-gray-90:#dad8d8;--text-color-link:#1493fb;--text-color-link-active:#6969f7;--text-color-link-visited:#a6a6f8;--background-color:#15202b}}*{box-sizing:border-box}body,html{padding:0;margin:0 auto;font-family:var(--font-family);color:var(--text-color);background-color:var(--background-color)}html{overflow-y:scroll}body{max-width:40em}.visually-hidden{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}p:last-child{margin-bottom:0}li,p{line-height:1.5}a[href]{color:var(--text-color-link)}a[href]:visited{color:var(--text-color-link-visited)}a[href]:active,a[href]:hover{color:var(--text-color-link-active)}main{padding:1rem}main :first-child{margin-top:0}header{border-bottom:1px dashed var(--color-gray-20);display:flex;gap:1em .5em;flex-wrap:wrap;align-items:center;padding:1em}header:after{content:"";display:table;clear:both}.links-nextprev{list-style:none;border-top:1px dashed var(--color-gray-20);padding:1em 0}table{margin:1em 0}code,pre{font-family:var(--font-family-monospace)}pre:not([class*=language-]){margin:.5em 0;line-height:1.375;-moz-tab-size:var(--syntax-tab-size);-o-tab-size:var(--syntax-tab-size);tab-size:var(--syntax-tab-size);-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal}code{word-break:break-all}.home-link{font-size:1em;font-weight:700;margin-right:2em}.home-link:link:not(:hover),.nav-item a[href]:not(:hover){text-decoration:none}.nav{display:flex;padding:0;margin:0;list-style:none}.nav-item{display:inline-block;margin-right:1em}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:capitalize;font-style:italic}.post-metadata{display:inline-flex;flex-wrap:wrap;gap:.5em;list-style:none;padding:0;margin:0}.post-metadata time{margin-right:1em}.header-anchor{text-decoration:none;font-style:normal;font-size:1em;margin-left:.1em}a[href].header-anchor,a[href].header-anchor:visited{color:transparent}a[href].header-anchor:focus,a[href].header-anchor:hover{text-decoration:underline}:hover>a[href].header-anchor,a[href].header-anchor:focus{color:#aaa}h2+.header-anchor{font-size:1.5em}</style><a href=#skip class=visually-hidden>Skip to main content</a><header><a href=/ class=home-link>Xiyue Zhang</a><nav><h2 class=visually-hidden>Top level navigation menu</h2><ul class=nav><li class=nav-item><a href=/ >Home</a><li class=nav-item><a href=/blog/ >Archive</a><li class=nav-item><a href=/about/ >About Me</a><li class=nav-item><a href=/donate/ >Donate</a></ul></nav></header><main id=skip><h1>This is my second post with a much longer title.</h1><ul class=post-metadata><li><time datetime=2018-07-04>04 July 2018</time><li><a href=/tags/number-2/ class=post-tag>number 2</a></ul><p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.<h2 id=section-header tabindex=-1>Section Header <a href=#section-header class=header-anchor>#</a></h2><p><a href=/blog/firstpost/ >First post</a> <a href=/blog/thirdpost/ >Third post</a><p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.<ul class=links-nextprev><li>Previous: <a href=/blog/firstpost/ >This is my first post.</a><li>Next: <a href=/blog/thirdpost/ >This is my third post.</a></ul></main><footer><a href=https://github.com/euyixiyue rel=me>github.com/euyixiyue </a>| <a href=mailto:euyix@proton.me rel=me>euyix@proton.me</a></footer>

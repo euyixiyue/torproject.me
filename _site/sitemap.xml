@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://torproject.me/blog/firstpost/</loc>
+		<lastmod>2018-05-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/blog/secondpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/blog/thirdpost/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/blog/fourthpost/</loc>
+		<lastmod>2018-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/blog/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/tags/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/tags/another-tag/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/tags/number-2/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/tags/second-tag/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/tags/posts-with-two-tags/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/about/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://torproject.me/donate/</loc>
+		<lastmod>2023-02-20</lastmod>
+	</url>
+</urlset>
