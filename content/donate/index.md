@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+title: Donate
 eleventyNavigation:
   key: Donate
   order: 4
