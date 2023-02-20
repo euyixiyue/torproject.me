@@ -28,6 +28,7 @@
     {#- Atom and JSON feeds included by default #}
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+    <link rel="alternate" href="https://netlify.torproject.me{{ canonicalUrl or page.url }}" title="{{ metadata.title }}">
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <link rel="preconnect" href="/" crossorigin>
