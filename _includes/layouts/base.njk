@@ -14,8 +14,8 @@
         <link rel="pingback" href="https://webmention.io/torproject.me/xmlrpc" /> 
 
 		
-    <link rel="canonical" href="{{ htmlBaseUrl }}">
-		<meta property="og:url" content="{{ page.url | htmlBaseUrl }}" />
+    <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+   <meta property="og:url" content="{{ metadata.url }}{{ canonicalUrl or page.url }}" />
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
