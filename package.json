@@ -34,15 +34,11 @@
 		"@11ty/eleventy-plugin-bundle": "^1.0.1",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-		"@edgio/devtools": "^6.1.1",
-		"@edgio/prefetch": "^6.1.1",
 		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"luxon": "^3.2.1",
 		"markdown-it-anchor": "^8.6.6"
 	},
 	"dependencies": {
-		"@ampproject/toolbox-optimizer": "^2.6.0",
-		"@edgio/core": "^6.1.1",
 		"csso": "^5.0.5",
 		"html-minifier": "^4.0.0",
 		"jimp": "^0.22.4",

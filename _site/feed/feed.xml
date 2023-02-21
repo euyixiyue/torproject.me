@@ -4,12 +4,21 @@
 	<subtitle>This is my personal blog at torproject.me, where I share my journey of discovering the innovative world. This is not the official website of the Tor Project.</subtitle>
 	<link href="https://torproject.me/feed/feed.xml" rel="self"/>
 	<link href="https://torproject.me/"/>
-	<updated>2018-09-30T00:00:00Z</updated>
+	<updated>2023-01-23T00:00:00Z</updated>
 	<id>https://torproject.me/</id>
 	<author>
 		<name>Xiyue Zhang</name>
 		<email>euyix@proton.me</email>
 	</author>
+	
+	<entry>
+		<title>This is a fifth post (draft)</title>
+		<link href="https://torproject.me/blog/fifthpost/"/>
+		<updated>2023-01-23T00:00:00Z</updated>
+		<id>https://torproject.me/blog/fifthpost/</id>
+		<content type="html">&lt;p&gt;This is a draft post&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>This is my fourth post.</title>
