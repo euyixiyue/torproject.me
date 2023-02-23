@@ -623,3 +623,7 @@ main{
     max-width:1140px;
     margin:0 auto
 }
+main {
+    -webkit-animation: fade-in-move-down 0.7s;
+    animation: fade-in-move-down 0.7s;
+}
